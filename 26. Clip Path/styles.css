@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: black;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+div {
+	display: inline-block;
+	width: clamp(300px, 40%, 400px);
+	height: clamp(300px, 40%, 400px); 
+}
+#circle {
+	background: yellow;
+	
+	/* Syntax = circle(radius at cx cy) */
+	
+	/* clip-path: circle(); */
+	/* clip-path: circle(50% at 0 0); */
+	clip-path: circle(50% at left top);
+}
+
+#ellipse { /* Similiar to Circle but allow more flexiblity to customize Circle */
+	background: green;
+	opacity: 0.7;
+	
+	/* Syntax = ellipse(rx ry at cx cy) */
+
+	/* clip-path: ellipse(100px 20px at 50% 50%); */
+	clip-path: ellipse(100px 20px at center);
+}
+
+#inset { /* Inset is just as padding that moves the elements to inside of parent */
+	background: cyan;
+
+	/* Syntax = inset(top right bottom left round border-radius) */
+
+	/* clip-path: inset(20px); */
+	/* clip-path: inset(10px 20px 30px 40px); */
+	/* clip-path: inset(10px 20px 30px 10px round 20px); */
+	clip-path: inset(10px 20px 30px 10px round 20px 0);
+}
+
+#polygon {
+	background: royalblue;
+
+	/* Syntax = polygon(x1 y1, x2 y2, x3 y3...) */
+
+	/* clip-path: polygon(0 0, 0 100px, 100px 0, 100px 100px); */
+	/* clip-path: polygon(0 0, 0 100px, 100px 0, 100px 0); */
+	clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
+}
+
+#path {
+	background: red;
+
+	/* Syntax = path("M x1,y1 L x2,y2 L x3,y3 Z") */
+
+	/* clip-path: path("M 10,40 L 70,40 L 80,30 L 80,10 L 90,0 L 140,0 L 150,10 L 150,190 L 140,200 L 10,200 L 0,190 L 0,50 L 10,40 Z"); */
+	/* For Arc instead of L = A rx,ry x-rotation, large-arc-flag, sweep-flag */
+	clip-path: path("M 10,40 L 70,40 A 10,10 0,0,0 80,30 L 80,10 A 10,10 0,0,1 90,0 L 140,0 A 10,10 0,0,1 150,10 L 150,190 A 10,10 0,0,1 140,200 L 10,200 A 10,10 0,0,1 0,190 L 0,50 A 10,10 0,0,1 10,40 Z");
+}
