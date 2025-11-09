@@ -9,13 +9,11 @@ This guide explains how to quickly integrate Font Awesome icons into your projec
 1. **Include the CDN Link**:
    Add the following line to the `<head>` section of your HTML file:
    ```html
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   ```
 2. **Font Awesome CheatSheats Link**:
-    Go to the following link and search the icon you want and copy its html code like
+    Go to the [fontawesome](https://fontawesome.com/) and search the icon you want and copy its html code like
     ```html
-    <i class="fas fa-home"></i> <!-- Solid home icon -->
-    <i class="far fa-smile"></i> <!-- Regular smile icon -->
-    <i class="fab fa-github"></i> <!-- GitHub brand icon -->
+    <i class="fa fa-home"></i> <!-- Solid home icon -->
     ```
-    and then paste it in your html code where you like to add the icon . YOu can customize these icons via CSS Prop.
+    and then paste it in your html code where you like to add the icon . You can customize these icons via CSS Prop.
