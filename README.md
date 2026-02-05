@@ -1,4 +1,4 @@
-# 🌈 CSS Learning Repository
+# <img src="Assets/Icons/favicon.svg" width="40" alt="CSS Logo"/> Learning Repo
 
 Welcome to the **CSS Learning Repository**! This is a collection of my CSS code examples and notes as I explore the world of styling and design. Whether you're a beginner or looking to sharpen your skills, this repository is here to help you learn CSS in a simple and practical way.
 
@@ -16,9 +16,3 @@ This repository covers **CSS fundamentals** and **advanced techniques** through 
 - Pseudo-classes and Pseudo-elements
 
 ---
-
-## 🚀 How to Use
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/UmairShakoor/CSS.git
